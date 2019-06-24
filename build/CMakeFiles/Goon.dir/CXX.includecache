@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Card.hpp
+SFML/Graphics.hpp
+-
+
+/home/jack/cpp-workspace/Goon/src/main.cpp
+Card.hpp
+/home/jack/cpp-workspace/Goon/src/Card.hpp
+

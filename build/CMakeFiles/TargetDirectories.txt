@@ -1,0 +1,3 @@
+/home/jack/cpp-workspace/Goon/build/CMakeFiles/rebuild_cache.dir
+/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir
+/home/jack/cpp-workspace/Goon/build/CMakeFiles/edit_cache.dir
