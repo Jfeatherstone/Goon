@@ -34,6 +34,7 @@ void Engine::initializeWindow(sf::Vector2f windowSize) {
 void Engine::initializeAssets() {
     ResourceManager::preLoadTextures("assets/");
     ResourceManager::preLoadSoundBuffers("assets/");
+    ResourceManager::preLoadFonts("assets/");
 }
 
 void Engine::run() {
