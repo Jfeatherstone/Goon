@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Goon.dir/src/Draw.cpp.o"
   "CMakeFiles/Goon.dir/src/Engine.cpp.o"
   "CMakeFiles/Goon.dir/src/Input.cpp.o"
+  "CMakeFiles/Goon.dir/src/MainMenu.cpp.o"
   "CMakeFiles/Goon.dir/src/Update.cpp.o"
   "CMakeFiles/Goon.dir/src/main.cpp.o"
   "Goon.pdb"

@@ -67,7 +67,7 @@ private:
     void initializeWindow(sf::Vector2f windowSize);
 
     /**
-     * @brief Load the assets including sounds and textures
+     * @brief Load the assets including sounds, textures and fonts
      */
     void initializeAssets();
 

@@ -1,4 +1,4 @@
-#include "ResourceManager.hpp"
+#include "external/ResourceManager.hpp"
 
 
 
@@ -23,6 +23,10 @@ std::map<std::string, sf::Font*> ResourceManager::m_fontMap;
 const std::string ResourceManager::DEFAULT_INVALID_TEXTURE = "invalid.png";
 const std::string ResourceManager::DEFAULT_INVALID_SOUND = "invalid.wav";
 const std::string ResourceManager::DEFAULT_INVALID_FONT = "invalid.ttf";
+
+std::string ResourceManager::m_invalidTexture = ResourceManager::DEFAULT_INVALID_TEXTURE;
+std::string ResourceManager::m_invalidSound = ResourceManager::DEFAULT_INVALID_SOUND;
+std::string ResourceManager::m_invalidFont = ResourceManager::DEFAULT_INVALID_FONT;
 
 
 /***************************

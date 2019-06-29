@@ -1,5 +1,7 @@
 #include "Engine.hpp"
 
+#include "MainMenu.hpp"
+
 /************************
  *    STATIC VARIABLES
  ************************/
@@ -48,5 +50,6 @@ void Engine::run() {
         update(dt.asSeconds());
 
         draw(dt.asSeconds());
+
     }
 }

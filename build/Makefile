@@ -231,6 +231,33 @@ src/Input.cpp.s:
 	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Input.cpp.s
 .PHONY : src/Input.cpp.s
 
+src/MainMenu.o: src/MainMenu.cpp.o
+
+.PHONY : src/MainMenu.o
+
+# target to build an object file
+src/MainMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.o
+.PHONY : src/MainMenu.cpp.o
+
+src/MainMenu.i: src/MainMenu.cpp.i
+
+.PHONY : src/MainMenu.i
+
+# target to preprocess a source file
+src/MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.i
+.PHONY : src/MainMenu.cpp.i
+
+src/MainMenu.s: src/MainMenu.cpp.s
+
+.PHONY : src/MainMenu.s
+
+# target to generate assembly for a file
+src/MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.s
+.PHONY : src/MainMenu.cpp.s
+
 src/Update.o: src/Update.cpp.o
 
 .PHONY : src/Update.o
@@ -306,6 +333,9 @@ help:
 	@echo "... src/Input.o"
 	@echo "... src/Input.i"
 	@echo "... src/Input.s"
+	@echo "... src/MainMenu.o"
+	@echo "... src/MainMenu.i"
+	@echo "... src/MainMenu.s"
 	@echo "... src/Update.o"
 	@echo "... src/Update.i"
 	@echo "... src/Update.s"
