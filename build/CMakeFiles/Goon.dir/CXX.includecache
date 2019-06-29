@@ -10,6 +10,34 @@
 SFML/Graphics.hpp
 -
 
+../include/CardInstance.hpp
+SFML/Graphics.hpp
+-
+Card.hpp
+../include/Card.hpp
+
+../include/Engine.hpp
+SFML/Graphics.hpp
+-
+Card.hpp
+../include/Card.hpp
+CardInstance.hpp
+../include/CardInstance.hpp
+external/ResourceManager.hpp
+../include/external/ResourceManager.hpp
+Player.hpp
+../include/Player.hpp
+iostream
+-
+
+../include/Player.hpp
+Card.hpp
+../include/Card.hpp
+CardInstance.hpp
+../include/CardInstance.hpp
+SFML/Graphics.hpp
+-
+
 ../include/external/ResourceManager.hpp
 SFML/Graphics.hpp
 -
@@ -20,11 +48,7 @@ iostream
 filesystem
 -
 
-/home/jack/cpp-workspace/Goon/external/ResourceManager.cpp
-external/ResourceManager.hpp
-/home/jack/cpp-workspace/Goon/external/external/ResourceManager.hpp
-
-/home/jack/cpp-workspace/Goon/src/main.cpp
-Card.hpp
-/home/jack/cpp-workspace/Goon/src/Card.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.cpp
+Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.hpp
 

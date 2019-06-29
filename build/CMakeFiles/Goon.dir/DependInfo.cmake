@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/cpp-workspace/Goon/external/ResourceManager.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/external/ResourceManager.cpp.o"
+  "/home/jack/cpp-workspace/Goon/src/Engine.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/Engine.cpp.o"
   "/home/jack/cpp-workspace/Goon/src/main.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
