@@ -123,6 +123,33 @@ Goon/fast:
 	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/build
 .PHONY : Goon/fast
 
+external/ResourceManager.o: external/ResourceManager.cpp.o
+
+.PHONY : external/ResourceManager.o
+
+# target to build an object file
+external/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/external/ResourceManager.cpp.o
+.PHONY : external/ResourceManager.cpp.o
+
+external/ResourceManager.i: external/ResourceManager.cpp.i
+
+.PHONY : external/ResourceManager.i
+
+# target to preprocess a source file
+external/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/external/ResourceManager.cpp.i
+.PHONY : external/ResourceManager.cpp.i
+
+external/ResourceManager.s: external/ResourceManager.cpp.s
+
+.PHONY : external/ResourceManager.s
+
+# target to generate assembly for a file
+external/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/external/ResourceManager.cpp.s
+.PHONY : external/ResourceManager.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Goon"
 	@echo "... edit_cache"
+	@echo "... external/ResourceManager.o"
+	@echo "... external/ResourceManager.i"
+	@echo "... external/ResourceManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

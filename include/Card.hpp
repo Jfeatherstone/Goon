@@ -9,16 +9,16 @@
 namespace abl {
 
     /**
-     * @brief 
-     * 
+     * @brief Abilities that have effects on the stats or scope of a card that do not
+     * require that the player activate them
      */
     enum Passive {
         
     };
 
     /**
-     * @brief 
-     * 
+     * @brief Abilities that can affect the stats or cause events when activated by
+     * the player
      */
     enum Active {
         
@@ -162,5 +162,18 @@ public:
      * @return int 
      */
     int getDefense();
+
+
+    /**************************************
+     *           STATIC METHODS
+     **************************************/
+
+    /**
+     * @brief Given a card, this will create the final texture that the player will see on the screen
+     * 
+     * @param card 
+     * @return sf::Texture* 
+     */
+    static sf::Texture* generateCardTexture(Card card);
 
 };

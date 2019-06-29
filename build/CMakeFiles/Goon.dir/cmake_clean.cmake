@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Goon.dir/external/ResourceManager.cpp.o"
   "CMakeFiles/Goon.dir/src/main.cpp.o"
   "Goon.pdb"
   "Goon"
