@@ -70,9 +70,22 @@ CMakeFiles/Goon.dir/external/ResourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Goon.dir/external/ResourceManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/Goon/external/ResourceManager.cpp -o CMakeFiles/Goon.dir/external/ResourceManager.cpp.s
 
+CMakeFiles/Goon.dir/src/Draw.cpp.o: CMakeFiles/Goon.dir/flags.make
+CMakeFiles/Goon.dir/src/Draw.cpp.o: ../src/Draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Goon.dir/src/Draw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Goon.dir/src/Draw.cpp.o -c /home/jack/cpp-workspace/Goon/src/Draw.cpp
+
+CMakeFiles/Goon.dir/src/Draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Goon.dir/src/Draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/cpp-workspace/Goon/src/Draw.cpp > CMakeFiles/Goon.dir/src/Draw.cpp.i
+
+CMakeFiles/Goon.dir/src/Draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Goon.dir/src/Draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/Goon/src/Draw.cpp -o CMakeFiles/Goon.dir/src/Draw.cpp.s
+
 CMakeFiles/Goon.dir/src/Engine.cpp.o: CMakeFiles/Goon.dir/flags.make
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../src/Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Goon.dir/src/Engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Goon.dir/src/Engine.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Goon.dir/src/Engine.cpp.o -c /home/jack/cpp-workspace/Goon/src/Engine.cpp
 
 CMakeFiles/Goon.dir/src/Engine.cpp.i: cmake_force
@@ -83,9 +96,35 @@ CMakeFiles/Goon.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Goon.dir/src/Engine.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/Goon/src/Engine.cpp -o CMakeFiles/Goon.dir/src/Engine.cpp.s
 
+CMakeFiles/Goon.dir/src/Input.cpp.o: CMakeFiles/Goon.dir/flags.make
+CMakeFiles/Goon.dir/src/Input.cpp.o: ../src/Input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Goon.dir/src/Input.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Goon.dir/src/Input.cpp.o -c /home/jack/cpp-workspace/Goon/src/Input.cpp
+
+CMakeFiles/Goon.dir/src/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Goon.dir/src/Input.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/cpp-workspace/Goon/src/Input.cpp > CMakeFiles/Goon.dir/src/Input.cpp.i
+
+CMakeFiles/Goon.dir/src/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Goon.dir/src/Input.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/Goon/src/Input.cpp -o CMakeFiles/Goon.dir/src/Input.cpp.s
+
+CMakeFiles/Goon.dir/src/Update.cpp.o: CMakeFiles/Goon.dir/flags.make
+CMakeFiles/Goon.dir/src/Update.cpp.o: ../src/Update.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Goon.dir/src/Update.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Goon.dir/src/Update.cpp.o -c /home/jack/cpp-workspace/Goon/src/Update.cpp
+
+CMakeFiles/Goon.dir/src/Update.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Goon.dir/src/Update.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/cpp-workspace/Goon/src/Update.cpp > CMakeFiles/Goon.dir/src/Update.cpp.i
+
+CMakeFiles/Goon.dir/src/Update.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Goon.dir/src/Update.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/cpp-workspace/Goon/src/Update.cpp -o CMakeFiles/Goon.dir/src/Update.cpp.s
+
 CMakeFiles/Goon.dir/src/main.cpp.o: CMakeFiles/Goon.dir/flags.make
 CMakeFiles/Goon.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Goon.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Goon.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Goon.dir/src/main.cpp.o -c /home/jack/cpp-workspace/Goon/src/main.cpp
 
 CMakeFiles/Goon.dir/src/main.cpp.i: cmake_force
@@ -99,14 +138,20 @@ CMakeFiles/Goon.dir/src/main.cpp.s: cmake_force
 # Object files for target Goon
 Goon_OBJECTS = \
 "CMakeFiles/Goon.dir/external/ResourceManager.cpp.o" \
+"CMakeFiles/Goon.dir/src/Draw.cpp.o" \
 "CMakeFiles/Goon.dir/src/Engine.cpp.o" \
+"CMakeFiles/Goon.dir/src/Input.cpp.o" \
+"CMakeFiles/Goon.dir/src/Update.cpp.o" \
 "CMakeFiles/Goon.dir/src/main.cpp.o"
 
 # External object files for target Goon
 Goon_EXTERNAL_OBJECTS =
 
 Goon: CMakeFiles/Goon.dir/external/ResourceManager.cpp.o
+Goon: CMakeFiles/Goon.dir/src/Draw.cpp.o
 Goon: CMakeFiles/Goon.dir/src/Engine.cpp.o
+Goon: CMakeFiles/Goon.dir/src/Input.cpp.o
+Goon: CMakeFiles/Goon.dir/src/Update.cpp.o
 Goon: CMakeFiles/Goon.dir/src/main.cpp.o
 Goon: CMakeFiles/Goon.dir/build.make
 Goon: /usr/lib/libsfml-graphics.so.2.5.1
@@ -114,7 +159,7 @@ Goon: /usr/lib/libsfml-audio.so.2.5.1
 Goon: /usr/lib/libsfml-window.so.2.5.1
 Goon: /usr/lib/libsfml-system.so.2.5.1
 Goon: CMakeFiles/Goon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Goon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/cpp-workspace/Goon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Goon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Goon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -66,6 +66,10 @@ private:
      */
     void initializeWindow(sf::Vector2f windowSize);
 
+    /**
+     * @brief Load the assets including sounds and textures
+     */
+    void initializeAssets();
 
     /*******************************************************
      *                   GAME LOOP METHODS

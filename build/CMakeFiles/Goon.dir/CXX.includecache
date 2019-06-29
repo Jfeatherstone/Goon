@@ -48,7 +48,23 @@ iostream
 filesystem
 -
 
+/home/jack/cpp-workspace/Goon/src/Draw.cpp
+Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.hpp
+
 /home/jack/cpp-workspace/Goon/src/Engine.cpp
+Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.hpp
+
+/home/jack/cpp-workspace/Goon/src/Input.cpp
+Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.hpp
+
+/home/jack/cpp-workspace/Goon/src/Update.cpp
+Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Engine.hpp
+
+/home/jack/cpp-workspace/Goon/src/main.cpp
 Engine.hpp
 /home/jack/cpp-workspace/Goon/src/Engine.hpp
 

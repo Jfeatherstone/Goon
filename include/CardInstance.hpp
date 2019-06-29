@@ -13,9 +13,14 @@ private:
     Card m_card;
 
     /**
-     * @brief The part of the class that will be drawn on a window
+     * @brief The part of the class that will be drawn on a window when the card is face up
      */
-    sf::Sprite m_sprite;
+    sf::Sprite m_frontSprite;
+
+    /**
+     * @brief The part of the class that will be drawn on a window when the card is face up
+     */
+    sf::Sprite m_backSprite;
 
     /**
      * @brief Whether the card is face up or face down

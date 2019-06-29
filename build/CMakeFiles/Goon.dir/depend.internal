@@ -4,6 +4,13 @@
 CMakeFiles/Goon.dir/external/ResourceManager.cpp.o
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/external/ResourceManager.cpp
+CMakeFiles/Goon.dir/src/Draw.cpp.o
+ ../include/Card.hpp
+ ../include/CardInstance.hpp
+ ../include/Engine.hpp
+ ../include/Player.hpp
+ ../include/external/ResourceManager.hpp
+ /home/jack/cpp-workspace/Goon/src/Draw.cpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o
  ../include/Card.hpp
  ../include/CardInstance.hpp
@@ -11,6 +18,20 @@ CMakeFiles/Goon.dir/src/Engine.cpp.o
  ../include/Player.hpp
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/src/Engine.cpp
+CMakeFiles/Goon.dir/src/Input.cpp.o
+ ../include/Card.hpp
+ ../include/CardInstance.hpp
+ ../include/Engine.hpp
+ ../include/Player.hpp
+ ../include/external/ResourceManager.hpp
+ /home/jack/cpp-workspace/Goon/src/Input.cpp
+CMakeFiles/Goon.dir/src/Update.cpp.o
+ ../include/Card.hpp
+ ../include/CardInstance.hpp
+ ../include/Engine.hpp
+ ../include/Player.hpp
+ ../include/external/ResourceManager.hpp
+ /home/jack/cpp-workspace/Goon/src/Update.cpp
 CMakeFiles/Goon.dir/src/main.cpp.o
  ../include/Card.hpp
  ../include/CardInstance.hpp
