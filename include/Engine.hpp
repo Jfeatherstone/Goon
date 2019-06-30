@@ -35,16 +35,18 @@ private:
     const static sf::Vector2f DEFAULT_WINDOW_SIZE;
 
     // We have several different scenes that represent different parts of the game
-
-    MainMenu m_mainMenu;
+    // They are all defined as pointers to Scenes, and later initalized as pointers
+    // to the child class (eg. MainMenu) so that they can be contained in the vector below
+    Scene* m_mainMenu;
 
     /**
      * @brief This is the "stack" that will handle the interaction between scenes.
      * The top most scene will be the only one to have its input taken, while all
-     * active scenes will be updated and drawn, just in the reverse order that they are
-     * present in the "stack".
+     * active scenes will be updated and drawn, just in the order that they are
+     * present in the "stack". This stack is used backwards, where the last element
+     * (back()) is the scene that is on top of any others
      */
-    std::vector<Scene> m_sceneStack;
+    std::vector<Scene*> m_sceneStack;
 
     /*******************************************************
      *                 INITIALIZATION METHODS

@@ -7,7 +7,7 @@ Scene::Scene() {
 }
 
 void Scene::init(sf::Vector2f windowSize) {
-    
+
 }
 
 void Scene::input(float elapsedTime) {
@@ -20,6 +20,7 @@ void Scene::update(float elapsedTime) {
 
 void Scene::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
+    std::cout << "Scene print" << std::endl;
 }
 
 sf::RectangleShape Scene::getBackground() {

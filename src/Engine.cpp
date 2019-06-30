@@ -44,14 +44,13 @@ void Engine::initializeAssets() {
 
 void Engine::initializeScenes() {
 
-    m_sceneStack.clear();
+    // Initialize the main menu
+    m_mainMenu = new MainMenu();
+    m_mainMenu->init(m_windowSize);
 
-    m_mainMenu.init(m_windowSize);
-
-    // Enable the main menu
+    // Enable the main menu since it is the first thing the user should see
     m_sceneStack.push_back(m_mainMenu);
 
-    std::cout << m_sceneStack.size() << std::endl;
 }
 
 void Engine::run() {
@@ -74,12 +73,11 @@ void Engine::draw() {
     // Clear the window
     m_window.clear();
 
-    // Draw all of the active scenes in reverse order
-    for (int i = m_sceneStack.size() - 1; i >= 0; i--)
-        m_window.draw(m_sceneStack[i]);
+    // Draw all of the active scenes in "reverse order"
+    // which is actually just forward, so the last scene is on top
+    for (int i = 0; i < m_sceneStack.size(); i++)
+        m_window.draw(*m_sceneStack[i]);
 
-
-    m_window.draw(m_mainMenu);
 
     // Show the newly drawn objects
     m_window.display();
@@ -90,15 +88,15 @@ void Engine::input(float elapsedTime) {
 
     // Only take input from the top
     if (m_sceneStack.size() > 0)
-        m_sceneStack[0].input(elapsedTime);
+        m_sceneStack[0]->input(elapsedTime);
 
 }
 
 void Engine::update(float elapsedTime) {
 
     // Update every scene (order doesn't really matter but we'll do it
-    // backwards to be consistent with the draw method)
-    for (int i = m_sceneStack.size() - 1; i >= 0; i--)
-        m_sceneStack[i].update(elapsedTime);
+    // "backwards" to be consistent with the draw method)
+    for (int i = 0; i < m_sceneStack.size(); i++)
+        m_sceneStack[i]->update(elapsedTime);
 
 }
