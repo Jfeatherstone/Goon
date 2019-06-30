@@ -51,9 +51,7 @@ void MainMenu::init(sf::Vector2f windowSize) {
 
 }
 
-void MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
-
-
+std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
 
 
 }

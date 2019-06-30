@@ -100,3 +100,30 @@ void Engine::update(float elapsedTime) {
         m_sceneStack[i]->update(m_window, elapsedTime);
 
 }
+
+void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
+
+    // First clear off the active scenes
+    m_sceneStack.clear();
+
+    // Now iterate through the scenes
+    for (SceneType st: activeScenes) {
+        switch (st) {
+            case SceneType::MainMenu:
+                m_sceneStack.push_back(m_mainMenu);
+                break;
+            case SceneType::OptionsMenu:
+                m_sceneStack.push_back(m_optionsMenu);
+                break;
+            case SceneType::PauseMenu:
+                m_sceneStack.push_back(m_pauseMenu);
+                break;
+            case SceneType::GameInstance:
+                m_sceneStack.push_back(m_gameInstance);
+                break;
+            case SceneType::CardCollection:
+                m_sceneStack.push_back(m_cardCollection);
+                break;
+        }
+    }
+}

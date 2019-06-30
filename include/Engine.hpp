@@ -6,6 +6,7 @@
 #include "CardInstance.hpp"
 #include "external/ResourceManager.hpp"
 #include "Player.hpp"
+#include "Scene/Scene.hpp"
 #include "Scene/MainMenu.hpp"
 
 #include <iostream>
@@ -38,6 +39,10 @@ private:
     // They are all defined as pointers to Scenes, and later initalized as pointers
     // to the child class (eg. MainMenu) so that they can be contained in the vector below
     Scene* m_mainMenu;
+    Scene* m_optionsMenu;
+    Scene* m_pauseMenu;
+    Scene* m_gameInstance;
+    Scene* m_cardCollection;
 
     /**
      * @brief This is the "stack" that will handle the interaction between scenes.
@@ -47,6 +52,16 @@ private:
      * (back()) is the scene that is on top of any others
      */
     std::vector<Scene*> m_sceneStack;
+
+
+    /**
+     * @brief This will take a vector of scenetypes, returned by the input method for a given
+     * scene, and activated the ones present in the vector, in the order that they are present.
+     * This vector should not be oriented backwards as the sceneStack will be.
+     * 
+     * @param activeScenes 
+     */
+    void updateSceneStack(std::vector<SceneType> activeScenes);
 
     /*******************************************************
      *                 INITIALIZATION METHODS
