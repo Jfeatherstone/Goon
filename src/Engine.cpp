@@ -1,7 +1,5 @@
 #include "Engine.hpp"
 
-#include "MainMenu.hpp"
-
 /************************
  *    STATIC VARIABLES
  ************************/
@@ -12,7 +10,12 @@ Engine::Engine(sf::Vector2f windowSize) {
 
     initializeWindow(windowSize);
     initializeAssets();
+    initializeScenes();
 }
+
+/**********************************
+ *      INITIALIZATION METHODS
+ **********************************/
 
 void Engine::initializeWindow(sf::Vector2f windowSize) {
 
@@ -39,6 +42,18 @@ void Engine::initializeAssets() {
     ResourceManager::preLoadFonts("assets/");
 }
 
+void Engine::initializeScenes() {
+
+    m_sceneStack.clear();
+
+    m_mainMenu.init(m_windowSize);
+
+    // Enable the main menu
+    m_sceneStack.push_back(m_mainMenu);
+
+    std::cout << m_sceneStack.size() << std::endl;
+}
+
 void Engine::run() {
     sf::Clock clock;
 
@@ -49,7 +64,41 @@ void Engine::run() {
 
         update(dt.asSeconds());
 
-        draw(dt.asSeconds());
+        draw();
 
     }
+}
+
+void Engine::draw() {
+
+    // Clear the window
+    m_window.clear();
+
+    // Draw all of the active scenes in reverse order
+    for (int i = m_sceneStack.size() - 1; i >= 0; i--)
+        m_window.draw(m_sceneStack[i]);
+
+
+    m_window.draw(m_mainMenu);
+
+    // Show the newly drawn objects
+    m_window.display();
+
+}
+
+void Engine::input(float elapsedTime) {
+
+    // Only take input from the top
+    if (m_sceneStack.size() > 0)
+        m_sceneStack[0].input(elapsedTime);
+
+}
+
+void Engine::update(float elapsedTime) {
+
+    // Update every scene (order doesn't really matter but we'll do it
+    // backwards to be consistent with the draw method)
+    for (int i = m_sceneStack.size() - 1; i >= 0; i--)
+        m_sceneStack[i].update(elapsedTime);
+
 }

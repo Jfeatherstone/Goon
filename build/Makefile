@@ -150,33 +150,6 @@ external/ResourceManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/external/ResourceManager.cpp.s
 .PHONY : external/ResourceManager.cpp.s
 
-src/Draw.o: src/Draw.cpp.o
-
-.PHONY : src/Draw.o
-
-# target to build an object file
-src/Draw.cpp.o:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Draw.cpp.o
-.PHONY : src/Draw.cpp.o
-
-src/Draw.i: src/Draw.cpp.i
-
-.PHONY : src/Draw.i
-
-# target to preprocess a source file
-src/Draw.cpp.i:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Draw.cpp.i
-.PHONY : src/Draw.cpp.i
-
-src/Draw.s: src/Draw.cpp.s
-
-.PHONY : src/Draw.s
-
-# target to generate assembly for a file
-src/Draw.cpp.s:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Draw.cpp.s
-.PHONY : src/Draw.cpp.s
-
 src/Engine.o: src/Engine.cpp.o
 
 .PHONY : src/Engine.o
@@ -204,86 +177,59 @@ src/Engine.cpp.s:
 	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Engine.cpp.s
 .PHONY : src/Engine.cpp.s
 
-src/Input.o: src/Input.cpp.o
+src/Scene/MainMenu.o: src/Scene/MainMenu.cpp.o
 
-.PHONY : src/Input.o
-
-# target to build an object file
-src/Input.cpp.o:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Input.cpp.o
-.PHONY : src/Input.cpp.o
-
-src/Input.i: src/Input.cpp.i
-
-.PHONY : src/Input.i
-
-# target to preprocess a source file
-src/Input.cpp.i:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Input.cpp.i
-.PHONY : src/Input.cpp.i
-
-src/Input.s: src/Input.cpp.s
-
-.PHONY : src/Input.s
-
-# target to generate assembly for a file
-src/Input.cpp.s:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Input.cpp.s
-.PHONY : src/Input.cpp.s
-
-src/MainMenu.o: src/MainMenu.cpp.o
-
-.PHONY : src/MainMenu.o
+.PHONY : src/Scene/MainMenu.o
 
 # target to build an object file
-src/MainMenu.cpp.o:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.o
-.PHONY : src/MainMenu.cpp.o
+src/Scene/MainMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o
+.PHONY : src/Scene/MainMenu.cpp.o
 
-src/MainMenu.i: src/MainMenu.cpp.i
+src/Scene/MainMenu.i: src/Scene/MainMenu.cpp.i
 
-.PHONY : src/MainMenu.i
+.PHONY : src/Scene/MainMenu.i
 
 # target to preprocess a source file
-src/MainMenu.cpp.i:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.i
-.PHONY : src/MainMenu.cpp.i
+src/Scene/MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.i
+.PHONY : src/Scene/MainMenu.cpp.i
 
-src/MainMenu.s: src/MainMenu.cpp.s
+src/Scene/MainMenu.s: src/Scene/MainMenu.cpp.s
 
-.PHONY : src/MainMenu.s
+.PHONY : src/Scene/MainMenu.s
 
 # target to generate assembly for a file
-src/MainMenu.cpp.s:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/MainMenu.cpp.s
-.PHONY : src/MainMenu.cpp.s
+src/Scene/MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.s
+.PHONY : src/Scene/MainMenu.cpp.s
 
-src/Update.o: src/Update.cpp.o
+src/Scene/Scene.o: src/Scene/Scene.cpp.o
 
-.PHONY : src/Update.o
+.PHONY : src/Scene/Scene.o
 
 # target to build an object file
-src/Update.cpp.o:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Update.cpp.o
-.PHONY : src/Update.cpp.o
+src/Scene/Scene.cpp.o:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o
+.PHONY : src/Scene/Scene.cpp.o
 
-src/Update.i: src/Update.cpp.i
+src/Scene/Scene.i: src/Scene/Scene.cpp.i
 
-.PHONY : src/Update.i
+.PHONY : src/Scene/Scene.i
 
 # target to preprocess a source file
-src/Update.cpp.i:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Update.cpp.i
-.PHONY : src/Update.cpp.i
+src/Scene/Scene.cpp.i:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/Scene.cpp.i
+.PHONY : src/Scene/Scene.cpp.i
 
-src/Update.s: src/Update.cpp.s
+src/Scene/Scene.s: src/Scene/Scene.cpp.s
 
-.PHONY : src/Update.s
+.PHONY : src/Scene/Scene.s
 
 # target to generate assembly for a file
-src/Update.cpp.s:
-	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Update.cpp.s
-.PHONY : src/Update.cpp.s
+src/Scene/Scene.cpp.s:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/Scene.cpp.s
+.PHONY : src/Scene/Scene.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -324,21 +270,15 @@ help:
 	@echo "... external/ResourceManager.o"
 	@echo "... external/ResourceManager.i"
 	@echo "... external/ResourceManager.s"
-	@echo "... src/Draw.o"
-	@echo "... src/Draw.i"
-	@echo "... src/Draw.s"
 	@echo "... src/Engine.o"
 	@echo "... src/Engine.i"
 	@echo "... src/Engine.s"
-	@echo "... src/Input.o"
-	@echo "... src/Input.i"
-	@echo "... src/Input.s"
-	@echo "... src/MainMenu.o"
-	@echo "... src/MainMenu.i"
-	@echo "... src/MainMenu.s"
-	@echo "... src/Update.o"
-	@echo "... src/Update.i"
-	@echo "... src/Update.s"
+	@echo "... src/Scene/MainMenu.o"
+	@echo "... src/Scene/MainMenu.i"
+	@echo "... src/Scene/MainMenu.s"
+	@echo "... src/Scene/Scene.o"
+	@echo "... src/Scene/Scene.i"
+	@echo "... src/Scene/Scene.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(Goon)
 
-file(GLOB SRC src/*.cpp external/*.cpp)
+file(GLOB_RECURSE SRC src/*.cpp external/*.cpp)
 
 include_directories(include/)
 

@@ -15,12 +15,17 @@ private:
     /**
      * @brief The part of the class that will be drawn on a window when the card is face up
      */
-    sf::Sprite m_frontSprite;
+    sf::Texture m_frontTexture;
 
     /**
      * @brief The part of the class that will be drawn on a window when the card is face up
      */
-    sf::Sprite m_backSprite;
+    sf::Texture m_backTexture;
+
+    /**
+     * @brief The object that will be drawn to the screen
+     */
+    sf::Sprite m_sprite;
 
     /**
      * @brief Whether the card is face up or face down

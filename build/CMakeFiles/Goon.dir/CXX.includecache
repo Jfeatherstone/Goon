@@ -27,14 +27,10 @@ external/ResourceManager.hpp
 ../include/external/ResourceManager.hpp
 Player.hpp
 ../include/Player.hpp
-MainMenu.hpp
-../include/MainMenu.hpp
+Scene/MainMenu.hpp
+../include/Scene/MainMenu.hpp
 iostream
 -
-
-../include/MainMenu.hpp
-Scene.hpp
-../include/Scene.hpp
 
 ../include/Player.hpp
 Card.hpp
@@ -44,9 +40,15 @@ CardInstance.hpp
 SFML/Graphics.hpp
 -
 
-../include/Scene.hpp
+../include/Scene/MainMenu.hpp
+Scene/Scene.hpp
+../include/Scene/Scene/Scene.hpp
+
+../include/Scene/Scene.hpp
 SFML/Graphics.hpp
 -
+external/ResourceManager.hpp
+../include/Scene/external/ResourceManager.hpp
 
 ../include/external/ResourceManager.hpp
 SFML/Graphics.hpp
@@ -58,25 +60,7 @@ iostream
 filesystem
 -
 
-/home/jack/cpp-workspace/Goon/src/Draw.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
-
 /home/jack/cpp-workspace/Goon/src/Engine.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
-MainMenu.hpp
-/home/jack/cpp-workspace/Goon/src/MainMenu.hpp
-
-/home/jack/cpp-workspace/Goon/src/Input.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
-
-/home/jack/cpp-workspace/Goon/src/MainMenu.cpp
-MainMenu.hpp
-/home/jack/cpp-workspace/Goon/src/MainMenu.hpp
-
-/home/jack/cpp-workspace/Goon/src/Update.cpp
 Engine.hpp
 /home/jack/cpp-workspace/Goon/src/Engine.hpp
 

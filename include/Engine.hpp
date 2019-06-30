@@ -6,6 +6,7 @@
 #include "CardInstance.hpp"
 #include "external/ResourceManager.hpp"
 #include "Player.hpp"
+#include "Scene/MainMenu.hpp"
 
 #include <iostream>
 
@@ -13,6 +14,9 @@ class Engine {
 
 private: 
 
+    /**
+     * @brief The name of the game that will be shown in the window title bar
+     */
     const static std::string GAME_NAME;
 
     /**
@@ -30,30 +34,17 @@ private:
      */
     const static sf::Vector2f DEFAULT_WINDOW_SIZE;
 
-    // Some bools for keeping track of what is going on in the game currently
-    bool m_inMainMenu;
-    bool m_inPauseMenu;
-    bool m_inGame;
+    // We have several different scenes that represent different parts of the game
+
+    MainMenu m_mainMenu;
 
     /**
-     * @brief Keeping track of whose turn it it
+     * @brief This is the "stack" that will handle the interaction between scenes.
+     * The top most scene will be the only one to have its input taken, while all
+     * active scenes will be updated and drawn, just in the reverse order that they are
+     * present in the "stack".
      */
-    bool m_isPlayerOnesTurn;
-
-    /**
-     * @brief The first player, which will be the local player if the match is online
-     */
-    Player m_playerOne;
-
-    /**
-     * @brief The second player, which will be the remote player if the match is online
-     */
-    Player m_playerTwo;
-
-    /**
-     * @brief Whether or not the game is online or local
-     */
-    bool m_isOnline;
+    std::vector<Scene> m_sceneStack;
 
     /*******************************************************
      *                 INITIALIZATION METHODS
@@ -70,6 +61,11 @@ private:
      * @brief Load the assets including sounds, textures and fonts
      */
     void initializeAssets();
+
+    /**
+     * @brief Setup the different scenes, including the main menu, the options menus, etc.
+     */
+    void initializeScenes();
 
     /*******************************************************
      *                   GAME LOOP METHODS
@@ -97,7 +93,7 @@ private:
      * 
      * @param elapsedTime The amount of time since the last game loop iteration
      */
-    void draw(float elapsedTime);
+    void draw();
 
 
 public:
