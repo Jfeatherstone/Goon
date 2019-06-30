@@ -88,7 +88,7 @@ void Engine::input(float elapsedTime) {
 
     // Only take input from the top
     if (m_sceneStack.size() > 0)
-        m_sceneStack[0]->input(elapsedTime);
+        m_sceneStack[0]->input(m_window, elapsedTime);
 
 }
 
@@ -97,6 +97,6 @@ void Engine::update(float elapsedTime) {
     // Update every scene (order doesn't really matter but we'll do it
     // "backwards" to be consistent with the draw method)
     for (int i = 0; i < m_sceneStack.size(); i++)
-        m_sceneStack[i]->update(elapsedTime);
+        m_sceneStack[i]->update(m_window, elapsedTime);
 
 }

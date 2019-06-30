@@ -63,13 +63,13 @@ public:
      * 
      * @param elapsedTime The time that has passed (in seconds) since the last frame
      */
-    virtual void input(float elapsedTime);
+    virtual void input(sf::RenderWindow& window, float elapsedTime);
     /**
      * @brief The pure virtual function that updates variables for a given scene
      * 
      * @param elapsedTime The time that has passed (in seconds) since the last frame
      */
-    virtual void update(float elapsedTime);
+    virtual void update(sf::RenderWindow& window, float elapsedTime);
 
     /**
      * @brief This is formatted slightly differently from the update and input methods as
