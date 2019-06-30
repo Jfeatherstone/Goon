@@ -87,8 +87,9 @@ void Engine::draw() {
 void Engine::input(float elapsedTime) {
 
     // Only take input from the top
+    // We then take that input return vector and update our scenestack
     if (m_sceneStack.size() > 0)
-        m_sceneStack[0]->input(m_window, elapsedTime);
+        updateSceneStack(m_sceneStack[0]->input(m_window, elapsedTime));
 
 }
 
@@ -101,7 +102,7 @@ void Engine::update(float elapsedTime) {
 
 }
 
-/*
+
 void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
 
     // First clear off the active scenes
@@ -128,4 +129,4 @@ void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
         }
     }
 }
-*/
+

@@ -6,40 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Card.hpp
-SFML/Graphics.hpp
--
-
-../include/CardInstance.hpp
-SFML/Graphics.hpp
--
-Card.hpp
-../include/Card.hpp
-
-../include/Engine.hpp
-SFML/Graphics.hpp
--
-Card.hpp
-../include/Card.hpp
-CardInstance.hpp
-../include/CardInstance.hpp
-external/ResourceManager.hpp
-../include/external/ResourceManager.hpp
-Player.hpp
-../include/Player.hpp
-Scene/MainMenu.hpp
-../include/Scene/MainMenu.hpp
-iostream
--
-
-../include/Player.hpp
-Card.hpp
-../include/Card.hpp
-CardInstance.hpp
-../include/CardInstance.hpp
-SFML/Graphics.hpp
--
-
 ../include/Scene/MainMenu.hpp
 Scene/Scene.hpp
 ../include/Scene/Scene/Scene.hpp
@@ -60,11 +26,7 @@ iostream
 filesystem
 -
 
-/home/jack/cpp-workspace/Goon/src/Engine.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
-
-/home/jack/cpp-workspace/Goon/src/main.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
+/home/jack/cpp-workspace/Goon/src/Scene/MainMenu.cpp
+Scene/MainMenu.hpp
+/home/jack/cpp-workspace/Goon/src/Scene/Scene/MainMenu.hpp
 

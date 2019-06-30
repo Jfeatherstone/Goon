@@ -49,12 +49,10 @@ void MainMenu::init(sf::Vector2f windowSize) {
 
 }
 
-void MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
+std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
 
-
-}
-
-void MainMenu::update(sf::RenderWindow& window, float elapsedTime) {
+    std::vector<SceneType> scenes;
+    scenes.push_back(SceneType::MainMenu);
 
     // We take the relative mouse position so we can highlight any text options that the mouse is inside of
     sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -82,6 +80,14 @@ void MainMenu::update(sf::RenderWindow& window, float elapsedTime) {
         m_exitText.setFillColor(HIGHLIGHT_TEXT_COLOR);
     else
         m_exitText.setFillColor(DEFAULT_TEXT_COLOR);
+
+
+    return scenes;
+
+}
+
+void MainMenu::update(sf::RenderWindow& window, float elapsedTime) {
+
 
 }
 
