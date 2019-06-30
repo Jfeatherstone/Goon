@@ -1,7 +1,5 @@
 #include "Scene/MainMenu.hpp"
 
-#include <iostream>
-
 const sf::Color MainMenu::DEFAULT_TEXT_COLOR = sf::Color(10, 10, 10);
 const sf::Color MainMenu::HIGHLIGHT_TEXT_COLOR = sf::Color(200, 200, 200);
 
@@ -51,7 +49,7 @@ void MainMenu::init(sf::Vector2f windowSize) {
 
 }
 
-std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
+void MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
 
 
 }

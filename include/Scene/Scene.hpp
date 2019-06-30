@@ -4,13 +4,15 @@
 
 #include "external/ResourceManager.hpp"
 
-enum SceneType {
+
+enum class SceneType {
     MainMenu,
     OptionsMenu,
     PauseMenu,
     GameInstance,
     CardCollection
 };
+
 
 class Scene: public sf::Drawable {
 
@@ -71,7 +73,7 @@ public:
      * 
      * @param elapsedTime The time that has passed (in seconds) since the last frame
      */
-    virtual std::vector<SceneType> input(sf::RenderWindow& window, float elapsedTime);
+    virtual void input(sf::RenderWindow& window, float elapsedTime);
     /**
      * @brief The pure virtual function that updates variables for a given scene
      * 

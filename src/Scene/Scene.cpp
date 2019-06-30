@@ -10,8 +10,8 @@ void Scene::init(sf::Vector2f windowSize) {
 
 }
 
-std::vector<SceneType> Scene::input(sf::RenderWindow& window, float elapsedTime) {
-
+void Scene::input(sf::RenderWindow& window, float elapsedTime) {
+    
 }
 
 void Scene::update(sf::RenderWindow& window, float elapsedTime) {

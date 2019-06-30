@@ -101,6 +101,7 @@ void Engine::update(float elapsedTime) {
 
 }
 
+/*
 void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
 
     // First clear off the active scenes
@@ -127,3 +128,4 @@ void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
         }
     }
 }
+*/

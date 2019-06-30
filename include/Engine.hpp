@@ -6,7 +6,6 @@
 #include "CardInstance.hpp"
 #include "external/ResourceManager.hpp"
 #include "Player.hpp"
-#include "Scene/Scene.hpp"
 #include "Scene/MainMenu.hpp"
 
 #include <iostream>
