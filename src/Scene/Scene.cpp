@@ -10,8 +10,8 @@ void Scene::init(sf::Vector2f windowSize) {
 
 }
 
-std::vector<SceneType> Scene::input(sf::RenderWindow& window, float elapsedTime) {
-    std::vector<SceneType> scenes;
+std::set<SceneType> Scene::input(sf::RenderWindow& window, float elapsedTime) {
+    std::set<SceneType> scenes;
 
     return scenes;
 }

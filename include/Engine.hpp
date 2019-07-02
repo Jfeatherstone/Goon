@@ -48,7 +48,7 @@ private:
      * 
      * @param activeScenes 
      */
-    void updateSceneStack(std::vector<SceneType> activeScenes);
+    void updateSceneStack(std::set<SceneType> activeScenes);
 
     /*******************************************************
      *                 INITIALIZATION METHODS

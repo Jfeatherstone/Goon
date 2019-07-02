@@ -57,9 +57,9 @@ void MainMenu::init(sf::Vector2f windowSize) {
 
 }
 
-std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
+std::set<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime) {
 
-    std::vector<SceneType> scenes;
+    std::set<SceneType> scenes;
 
     // We take the relative mouse position so we can highlight any text options that the mouse is inside of
     sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -107,7 +107,7 @@ std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTi
         // The options option
         if (m_optionsText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
             // Put the options scene on top of the main menu
-            scenes.push_back(SceneType::OptionsMenu);
+            scenes.insert(SceneType::OptionsMenu);
         }
 
         // The exit game option

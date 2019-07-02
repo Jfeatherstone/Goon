@@ -52,7 +52,7 @@ void Engine::initializeScenes() {
     // though. std::maps are ordered by comparators (<) and so each SceneType
     // is assigned an integer value, which reflect that same order as below:
     // Options = 0, ..., GameInstance = 4
-    
+
     // Initialize the options menu
     m_scenes[SceneType::OptionsMenu] = new OptionsMenu();
     m_scenes[SceneType::OptionsMenu]->init(m_windowSize);
@@ -85,8 +85,6 @@ void Engine::run() {
         update(dt.asSeconds());
 
         draw();
-
-        std::cout << m_scenesActive[SceneType::OptionsMenu] << std::endl;
 
     }
 }
@@ -134,7 +132,7 @@ void Engine::update(float elapsedTime) {
 }
 
 
-void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
+void Engine::updateSceneStack(std::set<SceneType> activeScenes) {
 
     // Now iterate through the scenes in the vector
     for (SceneType st: activeScenes) {
