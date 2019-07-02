@@ -14,8 +14,9 @@ enum class SceneType: int {
     OptionsMenu = 0,
     PauseMenu = 1,
     CardCollection = 2,
-    MainMenu = 3,
-    GameInstance = 4,
+    GameSelect = 3,
+    MainMenu = 4,
+    GameInstance = 5,
 };
 
 

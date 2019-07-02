@@ -4,6 +4,8 @@ const sf::Color Scene::DEFAULT_BACKGROUND_COLOR = sf::Color(50, 50, 50, 255);
 
 Scene::Scene() {
 
+    m_background.setFillColor(DEFAULT_BACKGROUND_COLOR);
+
 }
 
 void Scene::init(sf::Vector2f windowSize) {

@@ -88,37 +88,46 @@ std::set<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTime)
     else
         m_exitText.setFillColor(DEFAULT_TEXT_COLOR);
 
+    // And check for key presses and mouse clicks using events
+    sf::Event event;
+    while (window.pollEvent(event)) {
 
-    // Now we check if the player clicks on anything
-    // We cannot put this in the above code for some reason, as it just waits on a click
-    // and freezes up the screen
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-        
-        // The play game option
-        if (m_playGameText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
-            
-        }
+        if (event.type == sf::Event::KeyPressed) {
 
-        // The card collection option
-        if (m_cardCollectionText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+            // Open the option menu on esc
+            if (event.key.code == sf::Keyboard::Escape)
+                scenes.insert(SceneType::OptionsMenu);
 
         }
 
-        // The options option
-        if (m_optionsText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
-            // Put the options scene on top of the main menu
-            scenes.insert(SceneType::OptionsMenu);
-        }
+        if (event.type == sf::Event::MouseButtonPressed) {
 
-        // The exit game option
-        if (m_exitText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
-            // TODO: Put any closing and saving stuff here
-            exit(0);
-        }
+            // The play game option
+            if (m_playGameText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+                
+            }
 
+            // The card collection option
+            if (m_cardCollectionText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+
+            }
+
+            // The options option
+            if (m_optionsText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+                // Put the options scene on top of the main menu
+                scenes.insert(SceneType::OptionsMenu);
+            }
+
+            // The exit game option
+            if (m_exitText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+                // TODO: Put any closing and saving stuff here
+                exit(0);
+            }
+
+        }
     }
 
-    return scenes;
+        return scenes;
 
 }
 

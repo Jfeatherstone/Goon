@@ -68,23 +68,7 @@ iostream
 filesystem
 -
 
-/home/jack/cpp-workspace/Goon/src/Engine.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
-
 /home/jack/cpp-workspace/Goon/src/Scene/MainMenu.cpp
 Scene/MainMenu.hpp
 /home/jack/cpp-workspace/Goon/src/Scene/Scene/MainMenu.hpp
-
-/home/jack/cpp-workspace/Goon/src/Scene/OptionsMenu.cpp
-Scene/OptionsMenu.hpp
-/home/jack/cpp-workspace/Goon/src/Scene/Scene/OptionsMenu.hpp
-
-/home/jack/cpp-workspace/Goon/src/Scene/Scene.cpp
-Scene/Scene.hpp
-/home/jack/cpp-workspace/Goon/src/Scene/Scene/Scene.hpp
-
-/home/jack/cpp-workspace/Goon/src/main.cpp
-Engine.hpp
-/home/jack/cpp-workspace/Goon/src/Engine.hpp
 
