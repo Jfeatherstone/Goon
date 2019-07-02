@@ -5,12 +5,17 @@
 #include "external/ResourceManager.hpp"
 
 
-enum class SceneType {
-    MainMenu,
-    OptionsMenu,
-    PauseMenu,
-    GameInstance,
-    CardCollection
+/**
+ * @brief These represent the different types of scenes that may be active at any given time.
+ * They are given integer values such that they hold a certain order, and that some will
+ * always be displayed on top of others (eg. the pause menu should never be below the game instance)
+ */
+enum class SceneType: int {
+    OptionsMenu = 0,
+    PauseMenu = 1,
+    CardCollection = 2,
+    MainMenu = 3,
+    GameInstance = 4,
 };
 
 

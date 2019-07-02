@@ -7,7 +7,10 @@ void OptionsMenu::init(sf::Vector2f windowSize) {
 std::vector<SceneType> OptionsMenu::input(sf::RenderWindow& window, float elapsedTime) {
     
     std::vector<SceneType> scenes;
-    scenes.push_back(SceneType::OptionsMenu);
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+        scenes.push_back(SceneType::OptionsMenu);
+    }
 
 
     return scenes;

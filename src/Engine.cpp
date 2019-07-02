@@ -45,16 +45,32 @@ void Engine::initializeAssets() {
 
 void Engine::initializeScenes() {
 
-    // Initialize the main menu
-    m_mainMenu = new MainMenu();
-    m_mainMenu->init(m_windowSize);
-
-    // Enable the main menu since it is the first thing the user should see
-    m_sceneStack.push_back(m_mainMenu);
+    // Should be initialized in the following order:
+    // Options, Pause, Card Collection, Main, Game Instance
+    // This is the order that screens are displayed on top of each other
+    // Note that the order initialized or added here doesn't actually matter
+    // though. std::maps are ordered by comparators (<) and so each SceneType
+    // is assigned an integer value, which reflect that same order as below:
+    // Options = 0, ..., GameInstance = 4
     
     // Initialize the options menu
-    m_optionsMenu = new OptionsMenu();
-    m_optionsMenu->init(m_windowSize);
+    m_scenes[SceneType::OptionsMenu] = new OptionsMenu();
+    m_scenes[SceneType::OptionsMenu]->init(m_windowSize);
+    m_scenesActive[SceneType::OptionsMenu] = false; // Disable options menu
+
+    // Initialize the pause menu
+
+
+    // Initialize the card collection
+
+
+    // Initialize the main menu
+    m_scenes[SceneType::MainMenu] = new MainMenu();
+    m_scenes[SceneType::MainMenu]->init(m_windowSize);
+    m_scenesActive[SceneType::MainMenu] = true; // Enable the main menu
+
+    // Initialize the game instance
+
 
 }
 
@@ -70,6 +86,8 @@ void Engine::run() {
 
         draw();
 
+        std::cout << m_scenesActive[SceneType::OptionsMenu] << std::endl;
+
     }
 }
 
@@ -78,10 +96,12 @@ void Engine::draw() {
     // Clear the window
     m_window.clear();
 
-    // Draw all of the active scenes in "reverse order"
-    // which is actually just forward, so the last scene is on top
-    for (int i = 0; i < m_sceneStack.size(); i++)
-        m_window.draw(*m_sceneStack[i]);
+    // Now iterate backwards through the map and draw anything that is set to active
+    for (std::map<SceneType, bool>::reverse_iterator it = m_scenesActive.rbegin(); it != m_scenesActive.rend(); ++it) {
+        if (it->second) {
+            m_window.draw(*m_scenes[it->first]);
+        }
+    }
 
 
     // Show the newly drawn objects
@@ -91,48 +111,35 @@ void Engine::draw() {
 
 void Engine::input(float elapsedTime) {
 
-    // Only take input from the top
-    // We then take that input return vector and update our scenestack
-    if (m_sceneStack.size() > 0)
-        updateSceneStack(m_sceneStack[0]->input(m_window, elapsedTime));
+    // Iterate forward through the map and find the first active scene, and take input only from that
+    // We also update the scene stack based on any inputs
+    for (std::map<SceneType, bool>::iterator it = m_scenesActive.begin(); it != m_scenesActive.end(); ++it) {
+        if (it->second) {
+            updateSceneStack(m_scenes[it->first]->input(m_window, elapsedTime));
+            break;
+        }
+    }
 
-    std::cout << m_sceneStack.size() << std::endl;
 }
 
 void Engine::update(float elapsedTime) {
 
-    // Update every scene (order doesn't really matter but we'll do it
-    // "backwards" to be consistent with the draw method)
-    for (int i = 0; i < m_sceneStack.size(); i++)
-        m_sceneStack[i]->update(m_window, elapsedTime);
+    // Update every scene (order doesn't really matter, so we'll do it from top down)
+    for (std::map<SceneType, bool>::iterator it = m_scenesActive.begin(); it != m_scenesActive.end(); ++it) {
+        if (it->second) {
+            m_scenes[it->first]->update(m_window, elapsedTime);
+        }
+    }
 
 }
 
 
 void Engine::updateSceneStack(std::vector<SceneType> activeScenes) {
 
-    // First clear off the active scenes
-    m_sceneStack.clear();
-
-    // Now iterate through the scenes
+    // Now iterate through the scenes in the vector
     for (SceneType st: activeScenes) {
-        switch (st) {
-            case SceneType::MainMenu:
-                m_sceneStack.push_back(m_mainMenu);
-                break;
-            case SceneType::OptionsMenu:
-                m_sceneStack.push_back(m_optionsMenu);
-                break;
-            case SceneType::PauseMenu:
-                m_sceneStack.push_back(m_pauseMenu);
-                break;
-            case SceneType::GameInstance:
-                m_sceneStack.push_back(m_gameInstance);
-                break;
-            case SceneType::CardCollection:
-                m_sceneStack.push_back(m_cardCollection);
-                break;
-        }
+        // And toggle them
+        m_scenesActive[st] = !m_scenesActive[st];
     }
 }
 
