@@ -5,6 +5,7 @@
  ************************/
 const sf::Vector2f Engine::DEFAULT_WINDOW_SIZE = sf::Vector2f(800, 600);
 const std::string Engine::GAME_NAME = "Goon";
+const float Engine::VERSION = 0.1f;
 
 Engine::Engine(sf::Vector2f windowSize) {
 
@@ -50,6 +51,10 @@ void Engine::initializeScenes() {
 
     // Enable the main menu since it is the first thing the user should see
     m_sceneStack.push_back(m_mainMenu);
+    
+    // Initialize the options menu
+    //m_optionsMenu = new OptionsMenu();
+    //m_optionsMenu->init(m_windowSize);
 
 }
 
@@ -91,6 +96,7 @@ void Engine::input(float elapsedTime) {
     if (m_sceneStack.size() > 0)
         updateSceneStack(m_sceneStack[0]->input(m_window, elapsedTime));
 
+    std::cout << m_sceneStack.size() << std::endl;
 }
 
 void Engine::update(float elapsedTime) {

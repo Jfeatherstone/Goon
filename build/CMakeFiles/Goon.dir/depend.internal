@@ -10,11 +10,17 @@ CMakeFiles/Goon.dir/src/Engine.cpp.o
  ../include/Engine.hpp
  ../include/Player.hpp
  ../include/Scene/MainMenu.hpp
+ ../include/Scene/OptionsMenu.hpp
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/src/Engine.cpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o
+ ../include/Card.hpp
+ ../include/CardInstance.hpp
+ ../include/Engine.hpp
+ ../include/Player.hpp
  ../include/Scene/MainMenu.hpp
+ ../include/Scene/OptionsMenu.hpp
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/src/Scene/MainMenu.cpp
@@ -28,6 +34,7 @@ CMakeFiles/Goon.dir/src/main.cpp.o
  ../include/Engine.hpp
  ../include/Player.hpp
  ../include/Scene/MainMenu.hpp
+ ../include/Scene/OptionsMenu.hpp
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/src/main.cpp

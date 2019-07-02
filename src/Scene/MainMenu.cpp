@@ -18,34 +18,42 @@ void MainMenu::init(sf::Vector2f windowSize) {
     m_background.setSize(m_windowSize);
 
     m_titleText.setFont(*ResourceManager::getFont("assets/fonts/KarmaFuture.ttf"));
-    m_titleText.setString("Goon");
-    m_titleText.setCharacterSize(120);
+    m_titleText.setString(Engine::GAME_NAME);
+    m_titleText.setCharacterSize(m_windowSize.x * .12f);
     m_titleText.setOrigin(m_titleText.getLocalBounds().width / 2, m_titleText.getLocalBounds().height / 2);
     m_titleText.setPosition(m_windowSize.x / 2, m_windowSize.y * .15f);
 
     m_playGameText.setFont(*ResourceManager::getFont("assets/fonts/vcr_osd.ttf"));
     m_playGameText.setString("Play");
-    m_playGameText.setCharacterSize(50);
+    m_playGameText.setCharacterSize(m_windowSize.x * .05f);
     m_playGameText.setOrigin(m_playGameText.getLocalBounds().width / 2, m_playGameText.getLocalBounds().height / 2);
     m_playGameText.setPosition(m_windowSize.x / 2, m_windowSize.y * .40f);
 
     m_cardCollectionText.setFont(*ResourceManager::getFont("assets/fonts/vcr_osd.ttf"));
     m_cardCollectionText.setString("Card Collection");
-    m_cardCollectionText.setCharacterSize(50);
+    m_cardCollectionText.setCharacterSize(m_windowSize.x * .05f);
     m_cardCollectionText.setOrigin(m_cardCollectionText.getLocalBounds().width / 2, m_cardCollectionText.getLocalBounds().height / 2);
     m_cardCollectionText.setPosition(m_windowSize.x / 2, m_windowSize.y * .50f);
 
     m_optionsText.setFont(*ResourceManager::getFont("assets/fonts/vcr_osd.ttf"));
     m_optionsText.setString("Options");
-    m_optionsText.setCharacterSize(50);
+    m_optionsText.setCharacterSize(m_windowSize.x * .05f);
     m_optionsText.setOrigin(m_optionsText.getLocalBounds().width / 2, m_optionsText.getLocalBounds().height / 2);
     m_optionsText.setPosition(m_windowSize.x / 2, m_windowSize.y * .60f);
 
     m_exitText.setFont(*ResourceManager::getFont("assets/fonts/vcr_osd.ttf"));
     m_exitText.setString("Exit Game");
-    m_exitText.setCharacterSize(50);
+    m_exitText.setCharacterSize(m_windowSize.x * .05f);
     m_exitText.setOrigin(m_exitText.getLocalBounds().width / 2, m_exitText.getLocalBounds().height / 2);
     m_exitText.setPosition(m_windowSize.x / 2, m_windowSize.y * .70f);
+
+    m_versionText.setFont(*ResourceManager::getFont("assets/fonts/vcr_osd.ttf"));
+    std::stringstream versionText;
+    versionText << "Version " << Engine::VERSION;
+    m_versionText.setString(versionText.str());
+    m_versionText.setCharacterSize(m_windowSize.x * .02f);
+    // We don't center this text box as we want it in the bottom left corner
+    m_versionText.setPosition(0, m_windowSize.y * .97f);
 
 }
 
@@ -82,6 +90,35 @@ std::vector<SceneType> MainMenu::input(sf::RenderWindow& window, float elapsedTi
         m_exitText.setFillColor(DEFAULT_TEXT_COLOR);
 
 
+    // Now we check if the player clicks on anything
+    // We cannot put this in the above code for some reason, as it just waits on a click
+    // and freezes up the screen
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
+        
+        // The play game option
+        if (m_playGameText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+            
+        }
+
+        // The card collection option
+        if (m_cardCollectionText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+
+        }
+
+        // The options option
+        if (m_optionsText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+            // Put the options scene on top of the main menu
+            scenes.push_back(SceneType::OptionsMenu);
+        }
+
+        // The exit game option
+        if (m_exitText.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+            // TODO: Put any closing and saving stuff her
+            exit(0);
+        }
+
+    }
+
     return scenes;
 
 }
@@ -101,6 +138,7 @@ void MainMenu::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_cardCollectionText);
     target.draw(m_optionsText);
     target.draw(m_exitText);
+    target.draw(m_versionText);
 
     //std::cout << "Drawing main menu" << std::endl;
 }

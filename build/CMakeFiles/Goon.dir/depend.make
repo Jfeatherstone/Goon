@@ -9,11 +9,17 @@ CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/CardInstance.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/Engine.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/Player.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/Scene/MainMenu.hpp
+CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/Scene/OptionsMenu.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../include/external/ResourceManager.hpp
 CMakeFiles/Goon.dir/src/Engine.cpp.o: ../src/Engine.cpp
 
+CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Card.hpp
+CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/CardInstance.hpp
+CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Engine.hpp
+CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Player.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/MainMenu.hpp
+CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/OptionsMenu.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/external/ResourceManager.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../src/Scene/MainMenu.cpp
@@ -27,6 +33,7 @@ CMakeFiles/Goon.dir/src/main.cpp.o: ../include/CardInstance.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../include/Engine.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../include/Player.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../include/Scene/MainMenu.hpp
+CMakeFiles/Goon.dir/src/main.cpp.o: ../include/Scene/OptionsMenu.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../include/external/ResourceManager.hpp
 CMakeFiles/Goon.dir/src/main.cpp.o: ../src/main.cpp

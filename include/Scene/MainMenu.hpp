@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Scene/Scene.hpp"
+#include "Engine.hpp"
 
 class MainMenu: public Scene {
 
@@ -21,6 +22,8 @@ private:
     sf::Text m_optionsText;
 
     sf::Text m_exitText;
+
+    sf::Text m_versionText;
 
 public:
 

@@ -6,18 +6,15 @@
 #include "CardInstance.hpp"
 #include "external/ResourceManager.hpp"
 #include "Player.hpp"
+
 #include "Scene/MainMenu.hpp"
+#include "Scene/OptionsMenu.hpp"
 
 #include <iostream>
 
 class Engine {
 
 private: 
-
-    /**
-     * @brief The name of the game that will be shown in the window title bar
-     */
-    const static std::string GAME_NAME;
 
     /**
      * @brief The window that we will be drawing everything on
@@ -114,6 +111,16 @@ private:
 
 public:
     
+    /**
+     * @brief The name of the game that will be shown in the window title bar
+     */
+    const static std::string GAME_NAME;
+
+    /**
+     * @brief The current version of the game
+     */
+    const static float VERSION;
+
     /**
      * @brief This constructor will run all of the initialize methods above
      */
