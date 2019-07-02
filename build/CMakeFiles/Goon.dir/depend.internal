@@ -24,6 +24,11 @@ CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager.hpp
  /home/jack/cpp-workspace/Goon/src/Scene/MainMenu.cpp
+CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o
+ ../include/Scene/OptionsMenu.hpp
+ ../include/Scene/Scene.hpp
+ ../include/external/ResourceManager.hpp
+ /home/jack/cpp-workspace/Goon/src/Scene/OptionsMenu.cpp
 CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o
  ../include/Scene/Scene.hpp
  ../include/external/ResourceManager.hpp

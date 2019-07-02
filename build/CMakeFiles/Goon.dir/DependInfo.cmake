@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/cpp-workspace/Goon/external/ResourceManager.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/external/ResourceManager.cpp.o"
   "/home/jack/cpp-workspace/Goon/src/Engine.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/Engine.cpp.o"
   "/home/jack/cpp-workspace/Goon/src/Scene/MainMenu.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o"
+  "/home/jack/cpp-workspace/Goon/src/Scene/OptionsMenu.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o"
   "/home/jack/cpp-workspace/Goon/src/Scene/Scene.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o"
   "/home/jack/cpp-workspace/Goon/src/main.cpp" "/home/jack/cpp-workspace/Goon/build/CMakeFiles/Goon.dir/src/main.cpp.o"
   )

@@ -4,9 +4,9 @@
 
 class OptionsMenu: public Scene {
 
-public:
+private:
 
-    OptionsMenu();
+public:
 
     // The virtual methods from Scene
     void init(sf::Vector2f windowSize);

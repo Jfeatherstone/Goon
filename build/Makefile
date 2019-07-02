@@ -204,6 +204,33 @@ src/Scene/MainMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.s
 .PHONY : src/Scene/MainMenu.cpp.s
 
+src/Scene/OptionsMenu.o: src/Scene/OptionsMenu.cpp.o
+
+.PHONY : src/Scene/OptionsMenu.o
+
+# target to build an object file
+src/Scene/OptionsMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o
+.PHONY : src/Scene/OptionsMenu.cpp.o
+
+src/Scene/OptionsMenu.i: src/Scene/OptionsMenu.cpp.i
+
+.PHONY : src/Scene/OptionsMenu.i
+
+# target to preprocess a source file
+src/Scene/OptionsMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.i
+.PHONY : src/Scene/OptionsMenu.cpp.i
+
+src/Scene/OptionsMenu.s: src/Scene/OptionsMenu.cpp.s
+
+.PHONY : src/Scene/OptionsMenu.s
+
+# target to generate assembly for a file
+src/Scene/OptionsMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Goon.dir/build.make CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.s
+.PHONY : src/Scene/OptionsMenu.cpp.s
+
 src/Scene/Scene.o: src/Scene/Scene.cpp.o
 
 .PHONY : src/Scene/Scene.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/Scene/MainMenu.o"
 	@echo "... src/Scene/MainMenu.i"
 	@echo "... src/Scene/MainMenu.s"
+	@echo "... src/Scene/OptionsMenu.o"
+	@echo "... src/Scene/OptionsMenu.i"
+	@echo "... src/Scene/OptionsMenu.s"
 	@echo "... src/Scene/Scene.o"
 	@echo "... src/Scene/Scene.i"
 	@echo "... src/Scene/Scene.s"

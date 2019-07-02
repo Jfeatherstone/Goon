@@ -53,8 +53,8 @@ void Engine::initializeScenes() {
     m_sceneStack.push_back(m_mainMenu);
     
     // Initialize the options menu
-    //m_optionsMenu = new OptionsMenu();
-    //m_optionsMenu->init(m_windowSize);
+    m_optionsMenu = new OptionsMenu();
+    m_optionsMenu->init(m_windowSize);
 
 }
 

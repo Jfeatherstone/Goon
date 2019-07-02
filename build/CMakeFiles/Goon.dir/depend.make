@@ -24,6 +24,11 @@ CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../include/external/ResourceManager.hpp
 CMakeFiles/Goon.dir/src/Scene/MainMenu.cpp.o: ../src/Scene/MainMenu.cpp
 
+CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o: ../include/Scene/OptionsMenu.hpp
+CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o: ../include/Scene/Scene.hpp
+CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o: ../include/external/ResourceManager.hpp
+CMakeFiles/Goon.dir/src/Scene/OptionsMenu.cpp.o: ../src/Scene/OptionsMenu.cpp
+
 CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o: ../include/Scene/Scene.hpp
 CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o: ../include/external/ResourceManager.hpp
 CMakeFiles/Goon.dir/src/Scene/Scene.cpp.o: ../src/Scene/Scene.cpp
